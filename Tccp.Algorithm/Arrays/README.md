@@ -31,3 +31,5 @@ public static int BinarySearch(int[] arr, int size, int value)
 3. if the this value is smallwer than the middle value, we are going to search he left and cut in half again.
 4. If the value that we are searching is bigger than the middle value then again we are going to search the right half.
 5. if we find the value we are searching, then its index is returned or -1 is returned because we not found the value we are searching.
+
+<script src="https://gist.github.com/tarcisiocorte/26ba3f67f360483c9540e1193400fe35.js"></script>
