@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Arrays\sequencial-search.cs" />
+    <Compile Remove="Arrays\SimpleArray.cs" />
+    <Compile Remove="Arrays\SumIntArray.cs" />
+    <Compile Remove="Arrays\TwoDimationArray.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Arrays\sequencial-search.cs" />
+    <None Include="Arrays\SimpleArray.cs" />
+    <None Include="Arrays\SumIntArray.cs" />
+    <None Include="Arrays\TwoDimationArray.cs" />
+  </ItemGroup>
+
+</Project>

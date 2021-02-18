@@ -1,4 +1,3 @@
-using Internal;
 using System;
 
 namespace Demo.SequencialSearch
@@ -12,7 +11,7 @@ namespace Demo.SequencialSearch
             Console.WriteLine(Search(array, value));
         }
 
-        public static void Search(int[] array, int searchValue)
+        public static int Search(int[] array, int searchValue)
         {
             for (var i = 0; i < array.Length; i++)
             {
@@ -21,7 +20,7 @@ namespace Demo.SequencialSearch
                     return i;
                 }                
             }
-            return -1
+            return -1;
         }
     }
 }
