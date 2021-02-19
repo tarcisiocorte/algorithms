@@ -7,7 +7,14 @@ namespace Tccp.Algorithm
     {
         static void Main(string[] args)
         {
-            RotateArray();
+            ExecuteMaxSubArraySum();
+        }
+
+        #region Samples code to execute in the Main program
+        public static void ExecuteMaxSubArraySum()
+        {
+            int[] array = new int[] { -1, -2, 3, 4, -4, 6, -14, 8, 2 };
+            MaxSumSubArray.MaxSubArraySum(array);
         }
 
         public static void RotateArray()
@@ -16,7 +23,7 @@ namespace Tccp.Algorithm
             rotate.ReverseArray(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 1, 3);
         }
 
-        #region Samples code to execute in the Main program
+
         public void ExecuteBinarySearch()
         {
             BinarySerach.BinarySearch(new int[] { 10, 12, 20, 28, 29, 45, 48, 50 }, 19);
