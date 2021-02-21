@@ -1,5 +1,6 @@
 ﻿using System;
 using Tccp.Algorithm.Arrays;
+using Tccp.Algorithm.DynamicProgramming;
 
 namespace Tccp.Algorithm
 {
@@ -7,10 +8,17 @@ namespace Tccp.Algorithm
     {
         static void Main(string[] args)
         {
-            ExecuteMaxSubArraySum();
+            ExecuteUnglyNumber();
         }
 
         #region Samples code to execute in the Main program
+
+        public static void ExecuteUnglyNumber()
+        {
+            int number = UglyNumber.GetNthUglyNumber(84);
+            Console.WriteLine($" Number is {number}");
+        }
+
         public static void ExecuteMaxSubArraySum()
         {
             int[] array = new int[] { -1, -2, 3, 4, -4, 6, -14, 8, 2 };
