@@ -1,6 +1,7 @@
 ﻿using System;
 using Tccp.Algorithm.Arrays;
 using Tccp.Algorithm.DynamicProgramming;
+using Tccp.Algorithm.Recursive;
 
 namespace Tccp.Algorithm
 {
@@ -8,10 +9,15 @@ namespace Tccp.Algorithm
     {
         static void Main(string[] args)
         {
-            ExecuteUnglyNumber();
+            ExecutePrintGenericBase();
         }
 
         #region Samples code to execute in the Main program
+
+        public static void ExecutePrintGenericBase()
+        {
+            Formula.PrintGenericBase(100, 10);
+        }
 
         public static void ExecuteUnglyNumber()
         {
