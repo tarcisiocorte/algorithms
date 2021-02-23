@@ -9,7 +9,9 @@ namespace Tccp.Algorithm
     {
         static void Main(string[] args)
         {
-            ExecutePrintGenericBase();
+            int num = 5;
+            Console.WriteLine("The sequence of moves in Tower of Hanoi are :\n");
+            TowerOfHanoi.ExecuteRecursiveTowerOfHanoi(num, 'A', 'C', 'B');
         }
 
         #region Samples code to execute in the Main program
