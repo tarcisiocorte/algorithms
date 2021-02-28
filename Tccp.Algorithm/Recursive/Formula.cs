@@ -27,5 +27,23 @@ namespace Tccp.Algorithm.Recursive
             Console.Write(" " + conversion[digit]);
         }
 
+        /// <summary>
+        /// Euclid’s algorithm - GCD(n, m) == GCD(m, n mod m)
+        /// </summary>
+        /// <param name="numberA"></param>
+        /// <param name="numberB"></param>
+        /// <returns></returns>
+        public static int GetGreatestCommonDivisor(int numberA, int numberB)
+        {
+            if (numberA < numberB)
+            {
+                return GetGreatestCommonDivisor(numberB, numberA);
+            }
+            if (numberA % numberB == 0)
+            {
+                return numberB;
+            }
+            return GetGreatestCommonDivisor(numberB, numberA % numberB);
+        }
     }
 }
