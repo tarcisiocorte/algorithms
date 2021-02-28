@@ -9,12 +9,20 @@ namespace Tccp.Algorithm
     {
         static void Main(string[] args)
         {
-            int num = 5;
-            Console.WriteLine("The sequence of moves in Tower of Hanoi are :\n");
-            TowerOfHanoi.ExecuteRecursiveTowerOfHanoi(num, 'A', 'C', 'B');
+            ExecuteAllPermutationOfArray();
         }
 
         #region Samples code to execute in the Main program
+
+        private static void ExecuteAllPermutationOfArray()
+        {
+            int[] array = new int[5];
+            for (int i = 0; i < 5; i++)
+            {
+                array[i] = i;
+            }
+            PermutationsOfArrays.Permutation(array, 0, 5);
+        }
 
         public static void ExecutePrintGenericBase()
         {
