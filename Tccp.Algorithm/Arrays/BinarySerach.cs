@@ -31,5 +31,18 @@ namespace Tccp.Algorithm.Arrays
             }
             return -1;
         }
+
+        public static int BinarySearchRecursive(int[] array, int low, int high, int value)
+        {
+            if (low > high)
+                return -1;
+            int mid = low + (high - low) / 2;
+            if (array[mid] == value)
+                return mid;
+            else if (array[mid] < value)
+                return BinarySearchRecursive(array, mid + 1, high, value);
+            else
+                return BinarySearchRecursive(array, low, mid - 1, value);
+        }
     }
 }
