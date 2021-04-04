@@ -1,5 +1,6 @@
 ﻿using System;
 using Tccp.Algorithm.Arrays;
+using Tccp.Algorithm.CodeChallenge;
 using Tccp.Algorithm.DynamicProgramming;
 using Tccp.Algorithm.Recursive;
 
@@ -9,10 +10,18 @@ namespace Tccp.Algorithm
     {
         static void Main(string[] args)
         {
-            ExecuteAllPermutationOfArray();
+            ExecuteLongestSubstringWithoutRepeatingCharacters();
         }
 
         #region Samples code to execute in the Main program
+
+
+        public static void ExecuteLongestSubstringWithoutRepeatingCharacters()
+        {
+            string s = "abcabcbb";
+            int result = LongestSubstringWithoutRepeatingCharacters.Execution(s);
+            Console.WriteLine($"The longest substring without repeating characters is {result}");
+        }
 
         private static void ExecuteAllPermutationOfArray()
         {
